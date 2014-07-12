@@ -1,5 +1,7 @@
 <div ng-repeat="sound in sounds">
-    <div ng-controller="BiteCtrl" ng-init="init(sound)">
-        <button ng-click="play()">{{sound.title}}</button>
+    <div class="col-md-2">
+        <div class="bite img-rounded {{playingStyle}}" ng-controller="BiteCtrl" ng-init="init(sound)" ng-click="play()">
+            {{sound.title}} {{audio.paused}} {{remaining}}
+        </div>
     </div>
 </div>

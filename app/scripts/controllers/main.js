@@ -26,15 +26,24 @@ angular.module('soundboardApp')
     .controller('BiteCtrl', ['$scope', function ($scope) {
 
         $scope.audio = document.createElement('audio');
-        
+        $scope.playingStyle = '';
+                
         $scope.init = function (sound) {
             $scope.audio.id = sound.id;
             $scope.audio.src = sound.file;
+            $scope.audio.load();
         };
         
         $scope.play = function () {
-            $scope.audio.play();
+                        
+            if ($scope.audio.paused) {
+                $scope.audio.play();
+                $scope.playingStyle = 'playing';
+            } else {
+                $scope.audio.pause();
+                $scope.audio.currentTime = 0;
+                $scope.playingStyle = '';
+            }
         };
-
 
     }]);
