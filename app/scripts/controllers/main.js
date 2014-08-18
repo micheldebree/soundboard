@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc function
  * @name soundboardApp.controller:MainCtrl
@@ -7,43 +5,37 @@
  * # MainCtrl
  * Controller of the soundboardApp
  */
-angular.module('soundboardApp')
-    .controller('MainCtrl', function ($scope) {
-        $scope.sounds = [
-            {
-                id: "a1",
-                title: "Testje",
-                file: "sound1.mp3"
-            },
-            {
-                id: "a2",
-                title: "Test 2",
-                file: "sound2.mp3"
-            }];
-
-
+angular
+    
+    .module('soundboardApp', ['ngResource', 'soundboardService']).controller('MainCtrl', function ($scope, Soundboard) {
+        'use strict';
+        var sounds = Soundboard.query(function () {
+            $scope.sounds = sounds;
+        });
     })
-    .controller('BiteCtrl', ['$scope', function ($scope) {
+    
+    .controller('BiteCtrl', ['$scope',
+        function ($scope) {
+            'use strict';
+            $scope.audio = document.createElement('audio');
+            $scope.playingStyle = '';
 
-        $scope.audio = document.createElement('audio');
-        $scope.playingStyle = '';
-                
-        $scope.init = function (sound) {
-            $scope.audio.id = sound.id;
-            $scope.audio.src = sound.file;
-            $scope.audio.load();
-        };
-        
-        $scope.play = function () {
-                        
-            if ($scope.audio.paused) {
-                $scope.audio.play();
-                $scope.playingStyle = 'playing';
-            } else {
-                $scope.audio.pause();
-                $scope.audio.currentTime = 0;
-                $scope.playingStyle = '';
-            }
-        };
+            $scope.init = function (sound) {
+                $scope.audio.id = sound.id;
+                $scope.audio.src = sound.file;
+                $scope.audio.load();
+            };
 
-    }]);
+            $scope.play = function () {
+
+                if ($scope.audio.paused) {
+                    $scope.audio.play();
+                    $scope.playingStyle = 'playing';
+                } else {
+                    $scope.audio.pause();
+                    $scope.audio.currentTime = 0;
+                    $scope.playingStyle = '';
+                }
+            };
+
+        }]);

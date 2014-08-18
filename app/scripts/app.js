@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * @ngdoc overview
  * @name soundboardApp
@@ -8,5 +6,4 @@
  *
  * Main module of the application.
  */
-angular
-  .module('soundboardApp', []);
+angular.module('soundboardApp', ['ngResource']);
