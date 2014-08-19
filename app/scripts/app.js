@@ -6,4 +6,5 @@
  *
  * Main module of the application.
  */
+/*global angular*/
 angular.module('soundboardApp', ['ngResource']);

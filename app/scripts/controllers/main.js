@@ -5,13 +5,18 @@
  * # MainCtrl
  * Controller of the soundboardApp
  */
-angular
+/*global angular*/
+angular.module('soundboardApp', ['ngResource', 'soundboardService'])
     
-    .module('soundboardApp', ['ngResource', 'soundboardService']).controller('MainCtrl', function ($scope, Soundboard) {
+    .controller('MainCtrl', function ($scope, Soundboard) {
         'use strict';
-        var sounds = Soundboard.query(function () {
-            $scope.sounds = sounds;
+        $scope.soundboard = Soundboard.get({id: 'lau.js'});
+        
+        $scope.soundboard.$promise.then(function (data) {
+            $scope.sounds = data.sounds;
         });
+        
+        
     })
     
     .controller('BiteCtrl', ['$scope',
@@ -22,7 +27,7 @@ angular
 
             $scope.init = function (sound) {
                 $scope.audio.id = sound.id;
-                $scope.audio.src = sound.file;
+                $scope.audio.src = $scope.soundboard.folder + sound.file;
                 $scope.audio.load();
             };
 
