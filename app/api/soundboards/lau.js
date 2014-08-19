@@ -8,7 +8,7 @@
         },
         {
             "id": "a2",
-            "title": "Weet je nou nog niet hoe dat gaat?",
+            "title": "Weet je nou nog niet hoe 't gaat?",
             "file": "2.mp3"
         },
         {
@@ -18,8 +18,23 @@
         },
         {
             "id": "a4",
-            "title": "Dingetje 4",
+            "title": "Waarom doe je dan zo achterlijk dan?",
             "file": "4.mp3"
+        },
+        {
+            "id": "a5",
+            "title": "Tjonge jonge jonge wat ben je toch ook lekker bijdehand",
+            "file": "5.mp3"
+        },
+        {
+            "id": "a6",
+            "title": "Jajaja.. pestzooitje.. pestpleurisdinges",
+            "file": "6.mp3"
+        },
+         {
+            "id": "a7",
+            "title": "Allemaal zo snel",
+            "file": "7.mp3"
         }
     ]
 }
