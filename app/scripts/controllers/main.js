@@ -40,15 +40,13 @@ angular.module('soundboardApp', ['ngResource', 'soundboardService'])
             $scope.audio.id = sound.id;
             $scope.audio.src = $scope.soundboard.folder + sound.file;
             $scope.audio.load();
+            
         };
 
         $scope.play = function () {
 
             if ($scope.audio.paused) {
                 $scope.audio.play();
-            } else {
-                $scope.audio.pause();
-               
             }
         };
 

@@ -1,8 +1,9 @@
 <div ng-repeat="sound in sounds">
     <div class="col-xs-4 col-sm-2">
         <div class="square">
-            <div class="bite img-rounded {{playingStyle}}" ng-controller="BiteCtrl" ng-init="init(sound)" ng-click="play()">
-                {{sound.title}} {{remaining}}
+            <div class="bite {{playingStyle}}" style="background-color: #{{sound.color}}"
+                 ng-controller="BiteCtrl" ng-init="init(sound)" ng-click="play()">
+                {{sound.title}}
             </div>
         </div>
     </div>

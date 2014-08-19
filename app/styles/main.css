@@ -92,9 +92,12 @@ body {
     cursor: pointer;
     background-color: red;
     padding: 10%;
+    text-align: center;
 }
 .playing {
-    background-color: #ff8080;
+    margin: 1%;
+    width: 98%;
+    height: 98%;
 }
 
 .col-md-3,
