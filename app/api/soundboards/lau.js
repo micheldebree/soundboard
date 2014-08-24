@@ -64,7 +64,26 @@
         {
             "title": "Haal dat nou d'r tussendoor!",
             "file": "16.mp3"
+        },
+        {
+            "title": "Krijg toch de pest...",
+            "file": "17.mp3"
+        },
+        {
+            "title": "Altijd dat gezeik met jou",
+            "file": "18.mp3"
+        },
+         {
+            "title": "Nou ja dat begrijp ik dat je niks doet!",
+            "file": "19.mp3"
+        },
+         {
+            "title": "Alles ken je gvd na gaan lopen.",
+            "file": "20.mp3"
+        },
+         {
+            "title": "Alles in de knoop!",
+            "file": "21.mp3"
         }
-         
     ]
 }
