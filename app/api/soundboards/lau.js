@@ -1,5 +1,5 @@
 {
-    "folder": "/api/soundboards/lau/",
+    "folder": "api/soundboards/lau/",
     "sounds": [
         {
             "id": "a1",
@@ -65,6 +65,36 @@
             "id": "a11",
             "title": "Krijg er huilbuien van",
             "file": "11.mp3",
+            "color": "408080"
+        },
+        {
+            "id": "a12",
+            "title": "Krijg echt d'r mooi de pestkanker van",
+            "file": "12.mp3",
+            "color": "408080"
+        },
+        {
+            "id": "a13",
+            "title": "K' heb wel wat anders te doen",
+            "file": "13.mp3",
+            "color": "408080"
+        },
+        {
+            "id": "a14",
+            "title": "Je gaat altijd staan waar je niet moet staan!",
+            "file": "14.mp3",
+            "color": "408080"
+        },
+        {
+            "id": "a15",
+            "title": "En dan zit 't allemaal door mekaar",
+            "file": "15.mp3",
+            "color": "408080"
+        },
+         {
+            "id": "a16",
+            "title": "Haal dat nou d'r tussendoor!",
+            "file": "16.mp3",
             "color": "408080"
         }
     ]
