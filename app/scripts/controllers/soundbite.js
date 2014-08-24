@@ -23,7 +23,7 @@ angular.module('soundboardApp').controller('SoundbiteCtrl', function ($scope) {
     });
 
     $scope.init = function (sound) {
-        $scope.audio.id = sound.id;
+        $scope.audio.id = sound.file;
         $scope.audio.src = $scope.soundboard.folder + sound.file;
         $scope.audio.load();
     };
