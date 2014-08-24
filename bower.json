@@ -1,16 +1,16 @@
 {
-  "name": "soundboard",
-  "version": "0.0.0",
-  "dependencies": {
-    "angular": "1.2.16",
-    "json3": "~3.3.1",
-    "es5-shim": "~3.1.0",
-    "bootstrap": "~3.1.1",
-    "angular-resource": "~1.2.21"
-  },
-  "devDependencies": {
-    "angular-mocks": "1.2.16",
-    "angular-scenario": "1.2.16"
-  },
-  "appPath": "app"
+    "name": "soundboard2",
+    "version": "0.0.0",
+    "dependencies": {
+        "angular": "1.2.23",
+        "json3": "~3.3.2",
+        "es5-shim": "~4.0.3",
+        "bootstrap": "~3.2.0",
+        "angular-resource": "~1.2.23"
+    },
+    "devDependencies": {
+        "angular-mocks": "1.2.23",
+        "angular-scenario": "1.2.23"
+    },
+    "appPath": "app"
 }
