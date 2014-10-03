@@ -1,10 +1,11 @@
 <div ng-repeat="sound in sounds">
     <div class="col-xs-4 col-sm-2">
         <div class="square" ng-controller="SoundbiteCtrl">
-            <div class="bite {{playingStyle}}" style="background-color: #{{sound.color}}" ng-show="loaded"
+            <div class="bite {{playingStyle}}" style="background-color: #{{sound.color}}"
                   ng-init="init(sound)" ng-click="play()">
                 {{sound.title}}
             </div>
         </div>
     </div>
 </div>
+<div ng-add-to-homescreen></div>

@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Lau</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -14,6 +14,15 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="images/lau120.png" />
+    <link rel="apple-touch-icon" sizes="32x32" href="images/lau32.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/lau76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/lau120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/lau152.png" />
+    <link rel="apple-touch-startup-image" href="images/lau320x480.png">
+    <link rel="icon" type="image/png" href="images/lau32.png">
   </head>
   <body ng-app="soundboardApp">
     <!--[if lt IE 7]>
@@ -24,6 +33,7 @@
     <div class="container">
       <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
     </div>
+      
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -50,6 +60,7 @@
     <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-add-to-home-screen/dist/angular-add-to-home-screen.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
